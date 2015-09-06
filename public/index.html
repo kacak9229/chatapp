@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">'
+        <h2> Please sign in </h2>
+        <form action="" class="form-signin" id="login">
+          <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+          <input type="password" id="password" class="form-control" placeholder="Password" required>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+      </div>
+
+    <div class="col-md-4">
+    </div>
+    </div>
+
+
+    <p id="online"></p>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button class="btn btn-success">Send</button>
+    </form>
+  </div>
+  </body>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="http://127.0.0.1:8080/js/index.js"></script>
+</html>
